@@ -9,5 +9,7 @@ This macro creates plate overviews from images acquired with DHM setup at BSF, f
 3) at the end the overviews are created and saved in a "snapshot" folder in the main results folder:
 ![Image](https://github.com/FabienKuttler/DHM_plate_overview/blob/main/results.png)
 
+# Example of an overview
+![Image](https://github.com/FabienKuttler/DHM_plate_overview/blob/main/example.png)
 
 
