@@ -1,5 +1,5 @@
 # DHM_plate_overview
-This macro creates plate overviews from images acquired with DHM setup at BSF, for whole plate visualization purpose
+This macro creates plate overviews from images acquired with DHM setup at BSF, for whole plate or partial plate visualization purpose
 
 ## Installation
 This is a small macro for Fiji. It can be copy/pasted into the plugins folders of the Fiji installation. It is then available in Fiji's Plugins menu.
