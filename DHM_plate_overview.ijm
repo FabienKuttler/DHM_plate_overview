@@ -12,7 +12,7 @@ setMin = 800;
 setMax = 5000;
 formatPlate = newArray("96-well", "384-well", "Custom (partial plate)");
 emptyColor = newArray("Gray", "Black", "White");
-fovformat=newArray("1 FOV (1x1)", "4 FOV (2x2)", "9 FOV (3x3)", "16 FOV (4x4)", "25 FOV (5x5)", "Custom");
+fovformat=newArray("1 FOV (1x1)", "4 FOV (2x2)", "9 FOV (3x3)", "16 FOV (4x4)", "25 FOV (5x5)", "36 FOV (6x6)", "Custom");
 scaleBar=newArray("no", "yes");
 Dialog.create("DHM Snapshot creation");
 Dialog.addChoice("Plate format:", formatPlate);
