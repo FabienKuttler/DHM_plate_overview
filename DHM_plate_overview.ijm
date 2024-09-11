@@ -163,17 +163,27 @@ else{
 	for (hbis = 0; hbis<hmax; hbis++){
 		jbis = letters[hbis];
 		for (kbis = 1; kbis<kmax; kbis++) {
-			if (kbis<10) {	ibis = "0" + kbis;} 
-			else{ibis = kbis;}
-			for (mbis = 0; mbis<fov; mbis++) 	{
-				if (mbis<10) {fovallbis = "0" + mbis;}
-				else{fovallbis = mbis;}
+			if (kbis<10) {
+				ibis = "0" + kbis;
+			} 
+			else{
+				ibis = kbis;
+			}
+			for (mbis = 0; mbis<fov; mbis++) {
+				if (mbis<10) {
+					fovallbis = "0" + mbis;
+				}
+				else {
+					fovallbis = mbis;
+				}
 				setBatchMode(true);
 				if(File.exists(imageFolder + "/" + jbis + ibis + "/" + "00001_" + fovallbis + "_AK_OPL.tif")){
 					filelistinFirstFolder = getFileList(imageFolder + "/" + jbis + ibis);
 					plateNb = filelistinFirstFolder.length/fov;
 				}
-				else {continue;}
+				else {
+					continue;
+				}
 			}
 		}
 	}
@@ -183,14 +193,26 @@ for (n = 1; n<plateNb+1; n++){
 	for (h = start_h; h<hmax; h++){
 		j = letters[h];
 		for (k = start_k; k<kmax; k++) {
-			if (k<10) {	i = "0" + k;} 
-			else 	  {i = k;}
+			if (k<10) {
+				i = "0" + k;
+			} 
+			else {
+				i = k;
+			}
 			for (m = 0; m<fov; m++) 	{
-				if (m<10) {fovall = "0" + m;}
-				else{fovall = m;}
+				if (m<10) {
+					fovall = "0" + m;
+				}
+				else {
+					fovall = m;
+				}
 				setBatchMode(true);
-				if(n<10){zeros = "0000";}
-				else {zeros = "000";}
+				if(n<10){
+					zeros = "0000";
+				}
+				else {
+					zeros = "000";
+				}
 				if(File.exists(imageFolder + "/" + j + i + "/" + zeros + n + "_" + fovall + "_AK_OPL.tif")){
 					open(imageFolder + "/" + j + i + "/" + zeros + n + "_" + fovall + "_AK_OPL.tif");
 					run("Size...", "width=300 height=300 depth=1 constrain average interpolation=Bilinear");
